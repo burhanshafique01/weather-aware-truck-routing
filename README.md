@@ -11,7 +11,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-[**Live demo**](https://weather-aware-truck-routing-un9o.onrender.com) · [Deploy your own](https://render.com/deploy?repo=https://github.com/burhanshafique01/weather-aware-truck-routing) · [Loom script](docs/LOOM_SCRIPT.md)
+[**Live demo**](https://weather-aware-truck-routing-un9o.onrender.com) · [Deploy your own](https://render.com/deploy?repo=https://github.com/burhanshafique01/weather-aware-truck-routing)
 
 <img src="docs/screenshot.png" alt="Three routes from Chicago to Denver with risk-coloured checkpoints, a corridor weather heatmap and the 48-hour forecast slider" width="900" />
 
