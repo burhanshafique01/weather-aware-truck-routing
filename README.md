@@ -11,7 +11,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-[**Deploy your own**](https://render.com/deploy?repo=https://github.com/burhanshafique01/weather-aware-truck-routing) · [Loom script](docs/LOOM_SCRIPT.md)
+[**Live demo**](https://weather-aware-truck-routing-un9o.onrender.com) · [Deploy your own](https://render.com/deploy?repo=https://github.com/burhanshafique01/weather-aware-truck-routing) · [Loom script](docs/LOOM_SCRIPT.md)
 
 <img src="docs/screenshot.png" alt="Three routes from Chicago to Denver with risk-coloured checkpoints, a corridor weather heatmap and the 48-hour forecast slider" width="900" />
 
@@ -204,7 +204,7 @@ CI runs all of the above, plus `ruff`, a production build, and a Docker build wi
 
 The Dockerfile builds the React app and serves it from Django with WhiteNoise: **one service, one URL, no CORS**.
 
-**Render (free tier):** create a *Blueprint* from this repository; `render.yaml` provisions everything and generates the secret key. Any Docker host also works (Railway, Fly.io, Cloud Run): set `DJANGO_ALLOWED_HOSTS` to your domain.
+**Render (free tier):** create a *Blueprint* from this repository (`render.yaml` provisions everything), or a Docker *Web Service* with `DJANGO_DEBUG=false`, `DJANGO_ALLOWED_HOSTS=.onrender.com`, a generated `DJANGO_SECRET_KEY` and health check `/api/health/`. The free tier sleeps after 15 min idle, so the first request takes ~30–60 s. Any Docker host also works (Railway, Fly.io, Cloud Run): set `DJANGO_ALLOWED_HOSTS` to your domain.
 
 ## API
 

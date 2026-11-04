@@ -37,6 +37,7 @@ export function MapView({ plan, selectedId, onSelect, hour, showHeatmap, focused
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors · Weather: <a href="https://open-meteo.com/">Open-Meteo</a>'
         url={TILE_URL}
         maxZoom={19}
+        referrerPolicy="strict-origin-when-cross-origin"
       />
       <ZoomControl />
       {plan && (

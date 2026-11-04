@@ -76,6 +76,10 @@ STORAGES = {
 }
 WHITENOISE_KEEP_ONLY_HASHED_FILES = False
 
+# Send our origin (never full URLs) to other sites: OpenStreetMap's tile
+# servers reject tile requests that arrive without a Referer.
+SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
+
 CORS_ALLOWED_ORIGINS = env_list("CORS_ALLOWED_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173")
 
 REST_FRAMEWORK = {
